@@ -91,10 +91,19 @@ body {
 
 /* Smarthphone */
 @media (min-width: 360px) and (max-width: 767px)  {
+    
     .navbar {
+        position: relative !important;
+        padding: 20px !important;
+    }
+
+    .navbar-toggler{
         display: none !important;
     }
 
+    .navbar-brand {
+        font-size: 15pt;
+    }
     .row {
         margin: 0px 10px;
     }
@@ -168,7 +177,16 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
   
     .navbar {
+        position: relative !important;
+        padding: 50px !important;
+    }
+
+    .navbar-toggler{
         display: none !important;
+    }
+
+    .navbar-brand {
+        font-size: 25pt;
     }
     
     .home {
