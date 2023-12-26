@@ -94,6 +94,14 @@ body {
     .navbar {
         display: none !important;
     }
+
+    .row {
+        margin: 0px 10px;
+    }
+
+    .contact .container {
+        padding: 0px 30px !important;
+    }
     
     .home {
         width: 100%;
