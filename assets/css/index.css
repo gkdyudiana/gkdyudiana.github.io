@@ -39,6 +39,10 @@ body {
         width: 100%;
         height: 100vh;
     }
+
+    .home .container {
+        margin-top: -50px;
+    }
     
     .home .container h1 {
         font-size: 55pt;
@@ -57,7 +61,6 @@ body {
         width: 250px;
         height: 250px;
         outline: 2px solid #eee;
-        border-radius: 100%;
     }
     
     .btn-download {
@@ -70,6 +73,10 @@ body {
         background-color: white;
         color: black;
         box-shadow: 5px 7px 10px #eee;
+    }
+
+    .projects img {
+        width: 100%;
     }
     
     @keyframes berjalan {
@@ -91,7 +98,7 @@ body {
 
 /* Smarthphone */
 @media (min-width: 360px) and (max-width: 767px)  {
-    
+
     .navbar {
         position: relative !important;
         padding: 20px !important;
@@ -117,8 +124,23 @@ body {
         height: 100vh;
     }
     
+    .wrap-profession {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+    }
+
+    .home .container {
+        top: -80px;
+        position: relative;
+    }
+
+    .home .container h3 {
+        font-size: 20px;
+    }
+    
     .home .container h1 {
-        font-size: 55pt;
+        font-size: 45pt;
         font-weight: bolder;
     }
     
@@ -134,7 +156,6 @@ body {
         width: 250px;
         height: 250px;
         outline: 2px solid #eee;
-        border-radius: 100%;
     }
 
     .about .container h1 {
@@ -171,6 +192,14 @@ body {
         color: black;
         box-shadow: 5px 7px 10px #eee;
     }
+
+    .projects img {
+        width: 100%;
+    }
+
+    .projects h5 {
+        font-size: 18px;
+    }
 }
 
 /* Tablet */
@@ -193,6 +222,11 @@ body {
         width: 100%;
         height: 100vh;
     }
+
+    .home .container {
+        top: -100px;
+        position: relative;
+    }
     
     .home .container h1 {
         font-size: 55pt;
@@ -211,7 +245,6 @@ body {
         width: 250px;
         height: 250px;
         outline: 2px solid #eee;
-        border-radius: 100%;
     }
 
     .education .row .col, .experience .row .col {
@@ -220,6 +253,10 @@ body {
 
     .projects .row .col-4 {
         width: 50%;
+    }
+
+    .projects img {
+        width: 100%;
     }
     
     .btn-download {
