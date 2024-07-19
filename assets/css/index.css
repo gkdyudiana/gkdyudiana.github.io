@@ -9,6 +9,15 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.btn-outline-orange {
+    border: 1px solid #FF441F;
+    color: #FF441F;
+}
+
+.btn-outline-orange:hover {
+    background-color: #FF441F;
+}
+
 /* Desktop */
 @media (min-width: 1025px)  {
     .fixed-top {
