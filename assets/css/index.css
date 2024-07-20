@@ -18,6 +18,28 @@ body {
     background-color: #FF441F;
 }
 
+.btn-outline-purple {
+    border: 1px solid #ca01c0;
+    color: #ca01c0;
+}
+
+.btn-outline-purple:hover {
+    background-color: #ca01c0;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+.shake {
+    animation: tilt-shaking 1s linear infinite;
+    font-size: 35pt;
+}
+
 /* Desktop */
 @media (min-width: 1025px)  {
     .fixed-top {
@@ -55,7 +77,7 @@ body {
     
     .home .container h1 {
         font-size: 55pt;
-        font-weight: bolder;
+        font-weight: 900;
     }
     
     .home .container span {
