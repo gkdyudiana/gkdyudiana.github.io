@@ -235,6 +235,15 @@
 
       <!-- End of Contact -->
 
+
+      <!-- Scroll to top -->
+
+      <div class="bg-danger shadow" id="scroll-top" style="position: fixed; z-index: 9999;width: 80px;bottom: 20px;right:20px;height: 80px;border-radius: 100%;cursor: pointer;display: none;">
+        <h1 class="position-relative" style="left: 20px; top: 20px;color: #fff;"><i class="bi bi-arrow-up"></i></h1>
+      </div>
+
+      <!-- End Scroll -->
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/typed.umd.js"></script>
@@ -276,6 +285,21 @@
     if(numberOfScroll > $('.education').offset.top){
       educations.classList.add('active');
     }
+   })
+
+   window.addEventListener('scroll', function(e){
+    let scrollPosition = window.scrollY;
+    if(scrollPosition > 500){
+      $('#scroll-top').show();
+    }else{
+      $('#scroll-top').hide();
+    }
+   });
+
+   $('#scroll-top').on('click', function(e){
+      $('html, body').animate({
+        scrollTop: 0
+      }, 'slow');
    })
 
     window.addEventListener('scroll', (e) => {
